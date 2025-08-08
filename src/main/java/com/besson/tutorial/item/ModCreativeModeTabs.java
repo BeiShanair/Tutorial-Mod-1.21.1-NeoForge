@@ -1,6 +1,7 @@
 package com.besson.tutorial.item;
 
 import com.besson.tutorial.TutorialMod;
+import com.besson.tutorial.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -22,6 +23,9 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.ICE_ETHER);
                         output.accept(ModItems.RAW_ICE_ETHER);
+                        output.accept(ModBlocks.ICE_ETHER_BLOCK);
+                        output.accept(ModBlocks.RAW_ICE_ETHER_BLOCK);
+                        output.accept(ModBlocks.ICE_ETHER_ORE);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =

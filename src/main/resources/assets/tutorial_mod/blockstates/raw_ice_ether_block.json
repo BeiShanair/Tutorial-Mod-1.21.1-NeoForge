@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tutorial_mod:block/raw_ice_ether_block"
+    }
+  }
+}
