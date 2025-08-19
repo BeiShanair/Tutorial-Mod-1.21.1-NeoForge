@@ -1,0 +1,4 @@
+// 1.21.1	2025-08-19T13:08:59.7510732	Loot Tables
+fa539bcef2805fb399e4e7407c54888fa91eb57e data/tutorial_mod/loot_table/blocks/ice_ether_block.json
+1937d04dfbfb1f965c45b405257fef2e2ed54935 data/tutorial_mod/loot_table/blocks/ice_ether_ore.json
+cc8eac18b86493813e18f08741cbfa35c42b8508 data/tutorial_mod/loot_table/blocks/raw_ice_ether_block.json

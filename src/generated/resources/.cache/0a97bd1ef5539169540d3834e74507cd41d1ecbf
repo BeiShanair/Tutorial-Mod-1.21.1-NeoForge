@@ -1,0 +1,10 @@
+// 1.21.1	2025-08-19T13:08:59.7586614	Block States: tutorial_mod
+fbc65d526cfd378585c593489a63e97d7c2682ab assets/tutorial_mod/blockstates/ice_ether_block.json
+42796080f93c54ac898918d0ca9a34888b6d1f95 assets/tutorial_mod/blockstates/ice_ether_ore.json
+148923ccf48e4b5cd1390b16c036b7bf6cbd027f assets/tutorial_mod/blockstates/raw_ice_ether_block.json
+745221cc54cfc647e8930adb6b5aa0ddac8583a0 assets/tutorial_mod/models/block/ice_ether_block.json
+236c4681245c6223e0e193f3c1c628d6c83b2b3b assets/tutorial_mod/models/block/ice_ether_ore.json
+563a2e835564e5aaf728e16300a9dc2d8d323d54 assets/tutorial_mod/models/block/raw_ice_ether_block.json
+c54a679a23f45d0ba7dbc39029d386c83cd1220d assets/tutorial_mod/models/item/ice_ether_block.json
+5595a9e0d14a660680a7aa34f6457aa24c3dcc4c assets/tutorial_mod/models/item/ice_ether_ore.json
+81087f66b5dea0f1c62aa3069cdcf9c5ff2b7d6a assets/tutorial_mod/models/item/raw_ice_ether_block.json

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_ice_ether": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorial_mod:raw_ice_ether"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorial_mod:ice_ether_from_smelting_raw_ice_ether"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_ice_ether"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorial_mod:ice_ether_from_smelting_raw_ice_ether"
+    ]
+  }
+}
