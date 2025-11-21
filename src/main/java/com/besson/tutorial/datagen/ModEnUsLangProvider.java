@@ -25,6 +25,9 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModItems.STRAWBERRY.get(), "Strawberry");
         add(ModItems.CHEESE.get(), "Cheese");
 
+        add(ModItems.ANTHRACITE.get(), "Anthracite");
+        add(ModItems.ANTHRACITE2.get(), "Anthracite 2");
+
         add("itemGroup.tutorial_tab", "Tutorial Tab");
         add("itemGroup.material", "Material");
     }
