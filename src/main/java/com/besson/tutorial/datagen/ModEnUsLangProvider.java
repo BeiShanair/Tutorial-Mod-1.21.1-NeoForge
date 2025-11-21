@@ -28,6 +28,8 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModItems.ANTHRACITE.get(), "Anthracite");
         add(ModItems.ANTHRACITE2.get(), "Anthracite 2");
 
+        add(ModItems.PROSPECTOR.get(), "Prospector");
+
         add("itemGroup.tutorial_tab", "Tutorial Tab");
         add("itemGroup.material", "Material");
     }

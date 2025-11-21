@@ -23,5 +23,7 @@ public class ModItemModelsProvider extends ItemModelProvider {
 
         basicItem(ModItems.ANTHRACITE.get());
         basicItem(ModItems.ANTHRACITE2.get());
+
+        basicItem(ModItems.PROSPECTOR.get());
     }
 }

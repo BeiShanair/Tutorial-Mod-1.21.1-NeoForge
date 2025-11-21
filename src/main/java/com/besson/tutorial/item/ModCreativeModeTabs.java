@@ -33,6 +33,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.ANTHRACITE);
                         output.accept(ModItems.ANTHRACITE2);
+
+                        output.accept(ModItems.PROSPECTOR);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =
