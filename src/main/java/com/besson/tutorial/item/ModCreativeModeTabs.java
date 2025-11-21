@@ -26,6 +26,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ICE_ETHER_BLOCK);
                         output.accept(ModBlocks.RAW_ICE_ETHER_BLOCK);
                         output.accept(ModBlocks.ICE_ETHER_ORE);
+
+                        output.accept(ModItems.CORN);
+                        output.accept(ModItems.STRAWBERRY);
+                        output.accept(ModItems.CHEESE);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =

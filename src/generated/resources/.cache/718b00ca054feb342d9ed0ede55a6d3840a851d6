@@ -1,4 +1,6 @@
-// 1.21.1	2025-08-19T13:08:59.753102	Item Models: tutorial_mod
+// 1.21.1	2025-11-21T22:38:30.7212872	Item Models: tutorial_mod
+bfaf0c5d04ab56420b9d11e09063213df335aced assets/tutorial_mod/models/item/cheese.json
+33609bc3e6d18bd10b344c3b4f5d1e6af110b001 assets/tutorial_mod/models/item/corn.json
 eff098076f16ced3beb4b187d109fd0625c4919e assets/tutorial_mod/models/item/ice_ether.json
 1b747314c4a75e6adcc337f5e225fe7c653e326b assets/tutorial_mod/models/item/raw_ice_ether.json
-2f5d8235945bb06e42a5719823194a68457f29b5 assets/tutorial_mod/models/material/cardboard.json
+8dae9764ab14dc81f09b2e3416e3fd962e32dc30 assets/tutorial_mod/models/item/strawberry.json

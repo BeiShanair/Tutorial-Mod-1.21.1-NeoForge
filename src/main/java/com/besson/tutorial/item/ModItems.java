@@ -17,6 +17,13 @@ public class ModItems {
     public static final DeferredItem<Item> CARDBOARD =
             ITEMS.register("material/cardboard", () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> CORN =
+            ITEMS.register("corn", () -> new Item(new Item.Properties().food(ModFoods.CORN)));
+    public static final DeferredItem<Item> STRAWBERRY =
+            ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
+    public static final DeferredItem<Item> CHEESE =
+            ITEMS.register("cheese", () -> new Item(new Item.Properties().food(ModFoods.CHEESE)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

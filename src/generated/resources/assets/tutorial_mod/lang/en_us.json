@@ -2,9 +2,12 @@
   "block.tutorial_mod.ice_ether_block": "Ice Ether Block",
   "block.tutorial_mod.ice_ether_ore": "Ice Ether Ore",
   "block.tutorial_mod.raw_ice_ether_block": "Raw Ice Ether Block",
+  "item.tutorial_mod.cheese": "Cheese",
+  "item.tutorial_mod.corn": "Corn",
   "item.tutorial_mod.ice_ether": "Ice Ether",
   "item.tutorial_mod.material.cardboard": "CardBoard",
   "item.tutorial_mod.raw_ice_ether": "Raw Ice Ether",
+  "item.tutorial_mod.strawberry": "Strawberry",
   "itemGroup.material": "Material",
   "itemGroup.tutorial_tab": "Tutorial Tab"
 }

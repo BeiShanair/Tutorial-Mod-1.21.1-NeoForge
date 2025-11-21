@@ -21,6 +21,10 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModBlocks.RAW_ICE_ETHER_BLOCK.get(), "Raw Ice Ether Block");
         add(ModBlocks.ICE_ETHER_ORE.get(), "Ice Ether Ore");
 
+        add(ModItems.CORN.get(), "Corn");
+        add(ModItems.STRAWBERRY.get(), "Strawberry");
+        add(ModItems.CHEESE.get(), "Cheese");
+
         add("itemGroup.tutorial_tab", "Tutorial Tab");
         add("itemGroup.material", "Material");
     }
