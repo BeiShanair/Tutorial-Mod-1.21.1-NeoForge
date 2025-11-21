@@ -3,6 +3,7 @@ package com.besson.tutorial.datagen;
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.item.ModItems;
+import com.besson.tutorial.tag.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -43,7 +44,7 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
 
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.SUGAR, 3)
                 .pattern("###")
-                .define('#', Items.BEETROOT)
+                .define('#', ModItemTags.SUGAR_TAG)
                 .unlockedBy(getHasName(Items.BEETROOT), has(Items.BEETROOT))
                 .save(recipeOutput, TutorialMod.MOD_ID + ":" + "sugar_from_beetroot");
 

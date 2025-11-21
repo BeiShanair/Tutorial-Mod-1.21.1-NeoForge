@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-19T13:08:59.7541095	Recipes
+// 1.21.1	2025-11-21T23:42:45.3051805	Recipes
 849cec346aa793f3b22daf081d25081285c63375 data/tutorial_mod/advancement/recipes/building_blocks/ice_ether_block.json
 377bdf9db22472526b35adf2ce5058ce5f0230f6 data/tutorial_mod/advancement/recipes/building_blocks/ice_ether_ore.json
 69043e6f6a2bacaa5eabe44e59adec7e8d1c18ff data/tutorial_mod/advancement/recipes/food/sugar_from_beetroot.json
@@ -14,4 +14,4 @@ e4c78af6aada8933d1b6da17c44ed2aff4460886 data/tutorial_mod/recipe/ice_ether_from
 da6e01798f3a22d7241e7ae16dd8da8d31097f6b data/tutorial_mod/recipe/ice_ether_from_smelting_ice_ether_ore.json
 47eb5e2351cde914b3690e5b7aa883af7e388001 data/tutorial_mod/recipe/ice_ether_from_smelting_raw_ice_ether.json
 fc517022a2fb2215874ebb1b426fb5bff3f77f90 data/tutorial_mod/recipe/ice_ether_ore.json
-5f38b7f58fd381893a8f95f704251d1813ec5123 data/tutorial_mod/recipe/sugar_from_beetroot.json
+6c7e4de0902368a86c541ae430677993c736cc39 data/tutorial_mod/recipe/sugar_from_beetroot.json
