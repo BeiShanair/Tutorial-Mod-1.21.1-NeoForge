@@ -2,6 +2,7 @@ package com.besson.tutorial.item;
 
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.item.custom.ModFuelItem;
+import com.besson.tutorial.item.custom.PickaxeAxeItem;
 import com.besson.tutorial.item.custom.ProspectorItem;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -47,6 +48,8 @@ public class ModItems {
     public static final DeferredItem<Item> FIRE_ETHER_HOE = ITEMS.register("fire_ether_hoe",
             () -> new HoeItem(ModToolTiers.FIRE_ETHER, new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.FIRE_ETHER, 2, 3))));
 
+    public static final DeferredItem<Item> PICKAXE_AXE_ITEM = ITEMS.register("pickaxe_axe_item",
+            () -> new PickaxeAxeItem(ModToolTiers.FIRE_ETHER, new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.FIRE_ETHER, 6.0F, -2.8F)).fireResistant()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

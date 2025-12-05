@@ -41,6 +41,8 @@ public class ModItemModelsProvider extends ItemModelProvider {
         handheldItem(ModItems.FIRE_ETHER_AXE.get());
         handheldItem(ModItems.FIRE_ETHER_PICKAXE.get());
         handheldItem(ModItems.FIRE_ETHER_HOE.get());
+
+        handheldItem(ModItems.PICKAXE_AXE_ITEM.get());
     }
 
     private void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> base) {

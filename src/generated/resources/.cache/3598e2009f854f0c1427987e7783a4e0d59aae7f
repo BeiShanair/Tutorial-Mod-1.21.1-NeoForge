@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-06T01:33:16.2716804	Tags for minecraft:block mod id tutorial_mod
+// 1.21.1	2025-12-06T02:19:49.1185622	Tags for minecraft:block mod id tutorial_mod
 4a397b9d573a53d13c9ca92937e176808741c244 data/minecraft/tags/block/fences.json
 f18eed9602334b4dbf27e466d682d3fbaeed8697 data/minecraft/tags/block/fence_gates.json
 a59c02732689bf7eef138e44f2f968e6bbd053eb data/minecraft/tags/block/mineable/pickaxe.json
@@ -6,3 +6,4 @@ a59c02732689bf7eef138e44f2f968e6bbd053eb data/minecraft/tags/block/mineable/pick
 ad0667564444eb02388a6795f3a4f47c32374740 data/minecraft/tags/block/walls.json
 4a397b9d573a53d13c9ca92937e176808741c244 data/minecraft/tags/block/wooden_fences.json
 164000ea293babf4eb11cd70201b6c36a8d3539d data/tutorial_mod/tags/block/ore_tags.json
+5d10cc5d08f26a88e9e190ea06698868d0c3f8d0 data/tutorial_mod/tags/block/pickaxe_axe_mineable.json

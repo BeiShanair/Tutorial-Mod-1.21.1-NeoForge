@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "tutorial_mod:item/pickaxe_axe_item"
+  }
+}

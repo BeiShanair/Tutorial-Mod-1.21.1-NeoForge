@@ -46,6 +46,8 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModItems.FIRE_ETHER_PICKAXE.get(), "Fire Ether Pickaxe");
         add(ModItems.FIRE_ETHER_HOE.get(), "Fire Ether Hoe");
 
+        add(ModItems.PICKAXE_AXE_ITEM.get(), "Pickaxe Axe");
+
         add("itemGroup.tutorial_tab", "Tutorial Tab");
         add("itemGroup.material", "Material");
     }
