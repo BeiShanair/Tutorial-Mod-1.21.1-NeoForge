@@ -3,7 +3,7 @@ package com.besson.tutorial.item;
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.item.custom.ModFuelItem;
 import com.besson.tutorial.item.custom.ProspectorItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -33,6 +33,19 @@ public class ModItems {
 
     public static final DeferredItem<Item> PROSPECTOR =
             ITEMS.register("prospector", () -> new ProspectorItem(new Item.Properties().durability(127)));
+
+    public static final DeferredItem<Item> FIRE_ETHER =
+            ITEMS.register("fire_ether", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FIRE_ETHER_SWORD = ITEMS.register("fire_ether_sword",
+            () -> new SwordItem(ModToolTiers.FIRE_ETHER, new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.FIRE_ETHER, 2, 3))));
+    public static final DeferredItem<Item> FIRE_ETHER_PICKAXE = ITEMS.register("fire_ether_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.FIRE_ETHER, new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.FIRE_ETHER, 1, 2))));
+    public static final DeferredItem<Item> FIRE_ETHER_SHOVEL = ITEMS.register("fire_ether_shovel",
+            () -> new ShovelItem(ModToolTiers.FIRE_ETHER, new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.FIRE_ETHER, 2, 3))));
+    public static final DeferredItem<Item> FIRE_ETHER_AXE = ITEMS.register("fire_ether_axe",
+            () -> new AxeItem(ModToolTiers.FIRE_ETHER, new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.FIRE_ETHER, 2, 3))));
+    public static final DeferredItem<Item> FIRE_ETHER_HOE = ITEMS.register("fire_ether_hoe",
+            () -> new HoeItem(ModToolTiers.FIRE_ETHER, new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.FIRE_ETHER, 2, 3))));
 
 
     public static void register(IEventBus eventBus) {

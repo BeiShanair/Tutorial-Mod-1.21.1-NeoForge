@@ -1,8 +1,13 @@
-// 1.21.1	2025-12-06T01:33:16.2758374	Item Models: tutorial_mod
+// 1.21.1	2025-12-06T01:54:07.8045885	Item Models: tutorial_mod
 30f5da21ac3a5e5bd5779568e1cc423842be68bf assets/tutorial_mod/models/item/anthracite.json
 a1cbb06c69e9fff41f8fd629f3b74a4fe6ffe8a6 assets/tutorial_mod/models/item/anthracite2.json
 bfaf0c5d04ab56420b9d11e09063213df335aced assets/tutorial_mod/models/item/cheese.json
 33609bc3e6d18bd10b344c3b4f5d1e6af110b001 assets/tutorial_mod/models/item/corn.json
+ce3e899518f73c9c70afaf6d32a7997de8979852 assets/tutorial_mod/models/item/fire_ether_axe.json
+e6a223b67fde2e33729b0aa4aac42548d81cd513 assets/tutorial_mod/models/item/fire_ether_hoe.json
+f5e2a666e62a7adc564f07f0f5304db845c74de6 assets/tutorial_mod/models/item/fire_ether_pickaxe.json
+61af38e6406190b8288a65c6c4c781aeca4c4bdf assets/tutorial_mod/models/item/fire_ether_shovel.json
+db3fe91ac43c45f4a3f32831101cb17cc5c3bb5a assets/tutorial_mod/models/item/fire_ether_sword.json
 eff098076f16ced3beb4b187d109fd0625c4919e assets/tutorial_mod/models/item/ice_ether.json
 bfc36e06ab35d0b5d085a88db42950cdeb3e71ee assets/tutorial_mod/models/item/ice_ether_button.json
 0fcf1172ad558242b439d49657c843f028b2d447 assets/tutorial_mod/models/item/ice_ether_door.json

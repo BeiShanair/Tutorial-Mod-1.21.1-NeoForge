@@ -35,6 +35,12 @@ public class ModItemModelsProvider extends ItemModelProvider {
         wallItem(ModBlocks.ICE_ETHER_WALL, ModBlocks.ICE_ETHER_BLOCK);
 
         basicItem(ModBlocks.ICE_ETHER_DOOR.asItem());
+
+        handheldItem(ModItems.FIRE_ETHER_SWORD.get());
+        handheldItem(ModItems.FIRE_ETHER_SHOVEL.get());
+        handheldItem(ModItems.FIRE_ETHER_AXE.get());
+        handheldItem(ModItems.FIRE_ETHER_PICKAXE.get());
+        handheldItem(ModItems.FIRE_ETHER_HOE.get());
     }
 
     private void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> base) {

@@ -40,6 +40,12 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModBlocks.ICE_ETHER_DOOR.get(), "Ice Ether Door");
         add(ModBlocks.ICE_ETHER_TRAPDOOR.get(), "Ice Ether Trapdoor");
 
+        add(ModItems.FIRE_ETHER_SWORD.get(), "Fire Ether Sword");
+        add(ModItems.FIRE_ETHER_SHOVEL.get(), "Fire Ether Shovel");
+        add(ModItems.FIRE_ETHER_AXE.get(), "Fire Ether Axe");
+        add(ModItems.FIRE_ETHER_PICKAXE.get(), "Fire Ether Pickaxe");
+        add(ModItems.FIRE_ETHER_HOE.get(), "Fire Ether Hoe");
+
         add("itemGroup.tutorial_tab", "Tutorial Tab");
         add("itemGroup.material", "Material");
     }
