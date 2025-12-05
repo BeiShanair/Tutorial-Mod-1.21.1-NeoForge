@@ -1,9 +1,13 @@
-// 1.21.1	2025-11-21T23:26:21.5768697	Item Models: tutorial_mod
+// 1.21.1	2025-12-06T01:33:16.2758374	Item Models: tutorial_mod
 30f5da21ac3a5e5bd5779568e1cc423842be68bf assets/tutorial_mod/models/item/anthracite.json
 a1cbb06c69e9fff41f8fd629f3b74a4fe6ffe8a6 assets/tutorial_mod/models/item/anthracite2.json
 bfaf0c5d04ab56420b9d11e09063213df335aced assets/tutorial_mod/models/item/cheese.json
 33609bc3e6d18bd10b344c3b4f5d1e6af110b001 assets/tutorial_mod/models/item/corn.json
 eff098076f16ced3beb4b187d109fd0625c4919e assets/tutorial_mod/models/item/ice_ether.json
+bfc36e06ab35d0b5d085a88db42950cdeb3e71ee assets/tutorial_mod/models/item/ice_ether_button.json
+0fcf1172ad558242b439d49657c843f028b2d447 assets/tutorial_mod/models/item/ice_ether_door.json
+89531c939b9f72873c41e5103d7234af525f29a1 assets/tutorial_mod/models/item/ice_ether_fence.json
+71438add06f9da59ad63f1abe9c639358aca2e5e assets/tutorial_mod/models/item/ice_ether_wall.json
 7603d1f75f5a81e8aac57e1e4e3e09abb4f8c6ca assets/tutorial_mod/models/item/prospector.json
 1b747314c4a75e6adcc337f5e225fe7c653e326b assets/tutorial_mod/models/item/raw_ice_ether.json
 8dae9764ab14dc81f09b2e3416e3fd962e32dc30 assets/tutorial_mod/models/item/strawberry.json

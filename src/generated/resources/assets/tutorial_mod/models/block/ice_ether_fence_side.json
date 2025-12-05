@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "tutorial_mod:block/ice_ether_block"
+  }
+}

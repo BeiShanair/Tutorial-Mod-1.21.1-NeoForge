@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "tutorial_mod:ice_ether_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
+          "name": "tutorial_mod:ice_ether_door"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "tutorial_mod:blocks/ice_ether_door"
+}

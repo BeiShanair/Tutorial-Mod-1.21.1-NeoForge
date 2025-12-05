@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "tutorial_mod:block/ice_ether_block"
+  }
+}

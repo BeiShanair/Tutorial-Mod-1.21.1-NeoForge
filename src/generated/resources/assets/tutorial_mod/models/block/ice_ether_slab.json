@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "tutorial_mod:block/ice_ether_block",
+    "side": "tutorial_mod:block/ice_ether_block",
+    "top": "tutorial_mod:block/ice_ether_block"
+  }
+}
