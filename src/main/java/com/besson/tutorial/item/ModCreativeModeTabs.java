@@ -53,6 +53,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FIRE_ETHER_HOE);
 
                         output.accept(ModItems.PICKAXE_AXE_ITEM);
+
+                        output.accept(ModItems.ICE_ETHER_HELMET);
+                        output.accept(ModItems.ICE_ETHER_CHESTPLATE);
+                        output.accept(ModItems.ICE_ETHER_LEGGINGS);
+                        output.accept(ModItems.ICE_ETHER_BOOTS);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =

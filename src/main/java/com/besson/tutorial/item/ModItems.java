@@ -51,6 +51,19 @@ public class ModItems {
     public static final DeferredItem<Item> PICKAXE_AXE_ITEM = ITEMS.register("pickaxe_axe_item",
             () -> new PickaxeAxeItem(ModToolTiers.FIRE_ETHER, new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.FIRE_ETHER, 6.0F, -2.8F)).fireResistant()));
 
+    public static final DeferredItem<Item> ICE_ETHER_HELMET = ITEMS.register("ice_ether_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.HELMET,
+            new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(37))));
+    public static final DeferredItem<Item> ICE_ETHER_CHESTPLATE = ITEMS.register("ice_ether_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.CHESTPLATE,
+            new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(37))));
+    public static final DeferredItem<Item> ICE_ETHER_LEGGINGS = ITEMS.register("ice_ether_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.LEGGINGS,
+            new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(37))));
+    public static final DeferredItem<Item> ICE_ETHER_BOOTS = ITEMS.register("ice_ether_boots",
+            () -> new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.BOOTS,
+            new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(37))));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
