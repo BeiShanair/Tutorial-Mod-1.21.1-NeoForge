@@ -27,5 +27,7 @@
   "item.tutorial_mod.raw_ice_ether": "Raw Ice Ether",
   "item.tutorial_mod.strawberry": "Strawberry",
   "itemGroup.material": "Material",
-  "itemGroup.tutorial_tab": "Tutorial Tab"
+  "itemGroup.tutorial_tab": "Tutorial Tab",
+  "tooltip.tutorial.pickaxe_axe": "Hold §6§n§l§oSHIFT§r§r§r§r for more info!",
+  "tooltip.tutorial.pickaxe_axe.shift": "This is a item that can be used as a pickaxe and an axe"
 }
