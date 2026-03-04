@@ -1,6 +1,7 @@
 package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialMod;
+import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.block.custom.StrawberryCrop;
 import com.besson.tutorial.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -57,6 +58,8 @@ public class ModBlocks {
 
     public static final DeferredBlock<StrawberryCrop> STRAWBERRY_CROP =
             BLOCKS.register("strawberry_crop", () -> new StrawberryCrop(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+    public static final DeferredBlock<CornCrop> CORN_CROP =
+            BLOCKS.register("corn_crop", () -> new CornCrop(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

@@ -23,7 +23,7 @@ public class ModItems {
             ITEMS.register("material/cardboard", () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> CORN =
-            ITEMS.register("corn", () -> new Item(new Item.Properties().food(ModFoods.CORN)));
+            ITEMS.register("corn", () -> new ItemNameBlockItem(ModBlocks.CORN_CROP.get(), new Item.Properties().food(ModFoods.CORN)));
     public static final DeferredItem<Item> STRAWBERRY =
             ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
     public static final DeferredItem<Item> CHEESE =

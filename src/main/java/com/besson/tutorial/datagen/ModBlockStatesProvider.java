@@ -2,6 +2,7 @@ package com.besson.tutorial.datagen;
 
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.ModBlocks;
+import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.block.custom.StrawberryCrop;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -45,6 +46,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         blockItem(ModBlocks.ICE_ETHER_TRAPDOOR, "_bottom");
 
         crop(ModBlocks.STRAWBERRY_CROP.get(), "strawberry_crop_stage", StrawberryCrop.AGE);
+        crossCrop(ModBlocks.CORN_CROP.get(), "corn_crop_stage", CornCrop.AGE);
     }
 
     public void crop(CropBlock block, String name, IntegerProperty property) {
