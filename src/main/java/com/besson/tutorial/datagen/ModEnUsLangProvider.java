@@ -53,6 +53,8 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModItems.ICE_ETHER_LEGGINGS.get(), "Ice Ether Leggings");
         add(ModItems.ICE_ETHER_BOOTS.get(), "Ice Ether Boots");
 
+        add(ModItems.STRAWBERRY_SEEDS.get(), "Strawberry Seeds");
+
         add("tooltip.tutorial.pickaxe_axe.shift", "This is a item that can be used as a pickaxe and an axe");
         add("tooltip.tutorial.pickaxe_axe", "Hold §6§n§l§oSHIFT§r§r§r§r for more info!");
 

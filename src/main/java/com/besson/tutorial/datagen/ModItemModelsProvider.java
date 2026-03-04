@@ -48,6 +48,8 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(ModItems.ICE_ETHER_CHESTPLATE.get());
         basicItem(ModItems.ICE_ETHER_LEGGINGS.get());
         basicItem(ModItems.ICE_ETHER_BOOTS.get());
+
+        basicItem(ModItems.STRAWBERRY_SEEDS.get());
     }
 
     private void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> base) {

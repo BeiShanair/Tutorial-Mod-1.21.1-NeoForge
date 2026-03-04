@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-06T01:33:16.2748339	Loot Tables
+// 1.21.1	2026-03-04T14:49:44.7907187	Loot Tables
 fa539bcef2805fb399e4e7407c54888fa91eb57e data/tutorial_mod/loot_table/blocks/ice_ether_block.json
 4b779772371fed5bbea086a826a94f0a7f6fce4a data/tutorial_mod/loot_table/blocks/ice_ether_button.json
 3ef1e1ca4ee8081f8985787c6d88ccd0f32b20d4 data/tutorial_mod/loot_table/blocks/ice_ether_door.json
@@ -11,3 +11,4 @@ fa539bcef2805fb399e4e7407c54888fa91eb57e data/tutorial_mod/loot_table/blocks/ice
 54f3d35c0360e6f02bb6a2274d5281dcd67702f0 data/tutorial_mod/loot_table/blocks/ice_ether_trapdoor.json
 cd8f05934133ec50ac6fb5019f6e263f11c0b074 data/tutorial_mod/loot_table/blocks/ice_ether_wall.json
 cc8eac18b86493813e18f08741cbfa35c42b8508 data/tutorial_mod/loot_table/blocks/raw_ice_ether_block.json
+a10a465a705d61555ec3fe902398c968f96cf6e1 data/tutorial_mod/loot_table/blocks/strawberry_crop.json

@@ -58,6 +58,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICE_ETHER_CHESTPLATE);
                         output.accept(ModItems.ICE_ETHER_LEGGINGS);
                         output.accept(ModItems.ICE_ETHER_BOOTS);
+
+                        output.accept(ModItems.STRAWBERRY_SEEDS);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =
