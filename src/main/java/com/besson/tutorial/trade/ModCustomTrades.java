@@ -2,6 +2,7 @@ package com.besson.tutorial.trade;
 
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.item.ModItems;
+import com.besson.tutorial.villager.ModVillagers;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
@@ -41,6 +42,28 @@ public class ModCustomTrades {
                     new ItemCost(Items.EMERALD, 10),
                     new ItemStack(ModItems.ICE_ETHER_HELMET.get()),
                     5, 10, 0.2F
+            ));
+        }
+        
+        if (event.getType() == ModVillagers.ICE_ETHER_MASTER.value()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            
+            trades.get(1).add((trader, random) -> new MerchantOffer(
+                    new ItemCost(Items.EMERALD, 20),
+                    new ItemStack(ModItems.PICKAXE_AXE_ITEM.get(), 1),
+                    20, 5, 0.05f
+            ));
+            trades.get(1).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemCost(ModItems.ICE_ETHER.get(), 2),
+                    new ItemStack(Items.EMERALD, 1),
+                    10, 2, 0.05f
+
+            ));
+
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemCost(Items.EMERALD, 5),
+                    new ItemStack(ModItems.RAW_ICE_ETHER.get(), 10),
+                    15, 3, 0.05f
             ));
         }
     }

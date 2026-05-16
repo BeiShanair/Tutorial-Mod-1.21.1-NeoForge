@@ -60,5 +60,7 @@ public class ModEnUsLangProvider extends LanguageProvider {
 
         add("itemGroup.tutorial_tab", "Tutorial Tab");
         add("itemGroup.material", "Material");
+
+        add("entity.minecraft.villager.tutorial_mod.ice_ether_master", "Ice Ether Master");
     }
 }
