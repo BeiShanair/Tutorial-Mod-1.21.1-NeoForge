@@ -6,6 +6,7 @@ import com.besson.tutorial.item.custom.CustomArmorItem;
 import com.besson.tutorial.item.custom.ModFuelItem;
 import com.besson.tutorial.item.custom.PickaxeAxeItem;
 import com.besson.tutorial.item.custom.ProspectorItem;
+import com.besson.tutorial.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -68,6 +69,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds",
             () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
+    
+    public static final DeferredItem<Item> A_MOMENT_APART_MUSIC_DISC = 
+            ITEMS.register("a_moment_apart_music_disc",
+                    () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.A_MOMENT_APART_SONG).stacksTo(1).rarity(Rarity.EPIC)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

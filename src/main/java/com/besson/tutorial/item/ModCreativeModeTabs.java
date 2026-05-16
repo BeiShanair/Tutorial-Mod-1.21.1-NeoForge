@@ -60,6 +60,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ICE_ETHER_BOOTS);
 
                         output.accept(ModItems.STRAWBERRY_SEEDS);
+                        
+                        output.accept(ModItems.A_MOMENT_APART_MUSIC_DISC);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =

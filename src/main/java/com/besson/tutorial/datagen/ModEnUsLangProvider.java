@@ -69,5 +69,8 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add("sounds.tutorial_mod.block_step", "Block Step");
         add("sounds.tutorial_mod.block_hit", "Block Hit");
         add("sounds.tutorial_mod.block_fall", "Block Fall");
+
+        add(ModItems.A_MOMENT_APART_MUSIC_DISC.get(), "A Moment Apart Music Disc");
+        add(ModItems.A_MOMENT_APART_MUSIC_DISC.get().getDescriptionId() + ".desc", "A Moment Apart");
     }
 }

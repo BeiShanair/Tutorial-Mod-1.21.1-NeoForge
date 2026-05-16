@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tutorial_mod:item/a_moment_apart_music_disc"
+  }
+}

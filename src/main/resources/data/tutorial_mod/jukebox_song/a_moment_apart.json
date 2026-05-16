@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.tutorial_mod.a_moment_apart_music_disc.desc"
+  },
+  "length_in_seconds": 234.0,
+  "sound_event": "tutorial_mod:a_moment_apart"
+}
