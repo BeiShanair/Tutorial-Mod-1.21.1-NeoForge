@@ -1,9 +1,11 @@
 package com.besson.tutorial.item.custom;
 
+import com.besson.tutorial.sound.ModSounds;
 import com.besson.tutorial.tag.ModBlockTags;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
@@ -36,6 +38,7 @@ public class ProspectorItem extends Item {
 
                             if (isCorrectBlock(blockState)) {
                                 player.sendSystemMessage(Component.literal("Found " + name + " !"));
+                                level.playSound(null, pos, ModSounds.FOUND_ORE.get(), SoundSource.BLOCKS, 1f, 1f);
                                 found = true;
                                 break;
                             }
@@ -53,6 +56,7 @@ public class ProspectorItem extends Item {
 
                     if (isCorrectBlock(blockState)) {
                         player.sendSystemMessage(Component.literal("Found " + name + " !"));
+                        level.playSound(null, pos, ModSounds.FOUND_ORE.get(), SoundSource.BLOCKS, 1f, 1f);
                         found = true;
                         break;
                     }

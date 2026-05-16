@@ -62,5 +62,12 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add("itemGroup.material", "Material");
 
         add("entity.minecraft.villager.tutorial_mod.ice_ether_master", "Ice Ether Master");
+
+        add("sounds.tutorial_mod.found_ore", "Found Ore");
+        add("sounds.tutorial_mod.block_break", "Block Break");
+        add("sounds.tutorial_mod.block_place", "Block Place");
+        add("sounds.tutorial_mod.block_step", "Block Step");
+        add("sounds.tutorial_mod.block_hit", "Block Hit");
+        add("sounds.tutorial_mod.block_fall", "Block Fall");
     }
 }

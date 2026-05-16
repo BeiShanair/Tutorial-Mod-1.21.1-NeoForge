@@ -4,6 +4,7 @@ import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.block.custom.StrawberryCrop;
 import com.besson.tutorial.item.ModItems;
+import com.besson.tutorial.sound.ModSounds;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -22,7 +23,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> ICE_ETHER_BLOCK =
             registerBlocks("ice_ether_block", () -> new Block(BlockBehaviour.Properties.of().strength(1.5F, 6.0F)
-                    .requiresCorrectToolForDrops()));
+                    .requiresCorrectToolForDrops().sound(ModSounds.BLOCK_SOUNDS)));
     public static final DeferredBlock<Block> RAW_ICE_ETHER_BLOCK =
             registerBlocks("raw_ice_ether_block", () -> new Block(BlockBehaviour.Properties.of().strength(1.5F, 3.0F)));
     public static final DeferredBlock<Block> ICE_ETHER_ORE =
