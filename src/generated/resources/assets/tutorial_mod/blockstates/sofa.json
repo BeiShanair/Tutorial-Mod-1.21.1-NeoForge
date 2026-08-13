@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,type=left": {
+      "model": "tutorial_mod:block/sofa_left",
+      "y": 90
+    },
+    "facing=east,type=middle": {
+      "model": "tutorial_mod:block/sofa_middle",
+      "y": 90
+    },
+    "facing=east,type=right": {
+      "model": "tutorial_mod:block/sofa_right",
+      "y": 90
+    },
+    "facing=east,type=single": {
+      "model": "tutorial_mod:block/sofa",
+      "y": 90
+    },
+    "facing=north,type=left": {
+      "model": "tutorial_mod:block/sofa_left"
+    },
+    "facing=north,type=middle": {
+      "model": "tutorial_mod:block/sofa_middle"
+    },
+    "facing=north,type=right": {
+      "model": "tutorial_mod:block/sofa_right"
+    },
+    "facing=north,type=single": {
+      "model": "tutorial_mod:block/sofa"
+    },
+    "facing=south,type=left": {
+      "model": "tutorial_mod:block/sofa_left",
+      "y": 180
+    },
+    "facing=south,type=middle": {
+      "model": "tutorial_mod:block/sofa_middle",
+      "y": 180
+    },
+    "facing=south,type=right": {
+      "model": "tutorial_mod:block/sofa_right",
+      "y": 180
+    },
+    "facing=south,type=single": {
+      "model": "tutorial_mod:block/sofa",
+      "y": 180
+    },
+    "facing=west,type=left": {
+      "model": "tutorial_mod:block/sofa_left",
+      "y": 270
+    },
+    "facing=west,type=middle": {
+      "model": "tutorial_mod:block/sofa_middle",
+      "y": 270
+    },
+    "facing=west,type=right": {
+      "model": "tutorial_mod:block/sofa_right",
+      "y": 270
+    },
+    "facing=west,type=single": {
+      "model": "tutorial_mod:block/sofa",
+      "y": 270
+    }
+  }
+}

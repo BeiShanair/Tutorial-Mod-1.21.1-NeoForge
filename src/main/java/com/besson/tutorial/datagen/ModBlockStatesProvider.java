@@ -3,7 +3,9 @@ package com.besson.tutorial.datagen;
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.block.custom.CornCrop;
+import com.besson.tutorial.block.custom.SofaBlock;
 import com.besson.tutorial.block.custom.StrawberryCrop;
+import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -15,6 +17,7 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import org.checkerframework.checker.units.qual.C;
 
 import java.util.function.Function;
 
@@ -52,8 +55,44 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         simpleBlockWithoutBlockModel(ModBlocks.ORANGE_NIGHTSTAND);
         
         customHorizontalBlock(ModBlocks.SIMPLE_ORANGE_CLOCK);
+        
+        sofa(ModBlocks.SOFA, "sofa");
     }
 
+    private <T extends Block> void sofa(DeferredBlock<T> sofa, String name) {
+        ModelFile single = models().getExistingFile(modLoc("block/" + name));
+        ModelFile left = models().getExistingFile(modLoc("block/" + name + "_left"));
+        ModelFile middle = models().getExistingFile(modLoc("block/" + name + "_middle"));
+        ModelFile right = models().getExistingFile(modLoc("block/" + name + "_right"));
+        
+        getVariantBuilder(sofa.get()).forAllStates(state -> {
+            SofaBlock.Type type = state.getValue(SofaBlock.TYPE);
+            Direction facing = state.getValue(SofaBlock.FACING);
+            ModelFile model;
+            
+            switch (type) {
+                case LEFT -> model = left;
+                case MIDDLE -> model = middle;
+                case RIGHT -> model = right;
+                default -> model = single;
+            }
+            
+            int yRot;
+            switch (facing) {
+                case EAST -> yRot = 90;
+                case SOUTH -> yRot = 180;
+                case WEST -> yRot = 270;
+                default -> yRot = 0;
+            }
+            
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .rotationY(yRot)
+                    .build();
+        });
+        simpleBlockItem(sofa.get(), single);
+    }
+    
     private <T extends Block> void customHorizontalBlock(DeferredBlock<T> block) {
         ResourceLocation model = modLoc("block/" + block.getId().getPath());
         horizontalBlock(block.get(), models().getExistingFile(model));

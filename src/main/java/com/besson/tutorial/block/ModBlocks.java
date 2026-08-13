@@ -3,6 +3,7 @@ package com.besson.tutorial.block;
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.block.custom.SimpleOrangeClock;
+import com.besson.tutorial.block.custom.SofaBlock;
 import com.besson.tutorial.block.custom.StrawberryCrop;
 import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.sound.ModSounds;
@@ -67,6 +68,8 @@ public class ModBlocks {
     public static final DeferredBlock<SimpleOrangeClock> SIMPLE_ORANGE_CLOCK =
             registerBlocks("simple_orange_clock", () -> new SimpleOrangeClock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).noOcclusion()));
     
+    public static final DeferredBlock<SofaBlock> SOFA = 
+            registerBlocks("sofa", () -> new SofaBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).noOcclusion()));
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }

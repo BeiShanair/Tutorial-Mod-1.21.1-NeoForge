@@ -77,5 +77,7 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModBlocks.ORANGE_NIGHTSTAND.get(), "Orange Nightstand");
         
         add(ModBlocks.SIMPLE_ORANGE_CLOCK.get(), "Simple Orange Clock");
+        
+        add(ModBlocks.SOFA.get(), "Sofa");
     }
 }

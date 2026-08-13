@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-13T10:25:48.0642823	Block States: tutorial_mod
+// 1.21.1	2026-08-13T11:02:06.4531618	Block States: tutorial_mod
 1e77bebd6670b9446f08ccf09376e1596015f060 assets/tutorial_mod/blockstates/corn_crop.json
 fbc65d526cfd378585c593489a63e97d7c2682ab assets/tutorial_mod/blockstates/ice_ether_block.json
 cb33d9b5bc7d8822315f063b3138354421e1d062 assets/tutorial_mod/blockstates/ice_ether_button.json
@@ -14,6 +14,7 @@ a8102511b6ca15d03d851e5488aa44ce05e71852 assets/tutorial_mod/blockstates/ice_eth
 6cad061bd0fe57cac6d5690d6a95471d37725831 assets/tutorial_mod/blockstates/orange_nightstand.json
 148923ccf48e4b5cd1390b16c036b7bf6cbd027f assets/tutorial_mod/blockstates/raw_ice_ether_block.json
 ecbbd249bd6503f9dc0137ed07114d1aca2e4e4b assets/tutorial_mod/blockstates/simple_orange_clock.json
+71e203c9825f11c164df5eddc7d4a5e85fad85c0 assets/tutorial_mod/blockstates/sofa.json
 baec8bb48b9a2164589ba03b07c2401e2837296c assets/tutorial_mod/blockstates/strawberry_crop.json
 5fd56b13e4438810700edce93eb46df979b5752d assets/tutorial_mod/models/block/corn_crop_stage0.json
 e67b08a90e7aeb3fa7d263f821240a4e3a778cdd assets/tutorial_mod/models/block/corn_crop_stage1.json
@@ -72,3 +73,4 @@ dfd58c30ba177d98d845e42b66159f607c3ca7ac assets/tutorial_mod/models/item/ice_eth
 ff253ca37ab18ddbe283a072f7592de751afa3be assets/tutorial_mod/models/item/orange_nightstand.json
 81087f66b5dea0f1c62aa3069cdcf9c5ff2b7d6a assets/tutorial_mod/models/item/raw_ice_ether_block.json
 b55905623e695a9151266db6c73e751f740aa0c2 assets/tutorial_mod/models/item/simple_orange_clock.json
+acaa80152d390453bf38bb773a4071200f3b7356 assets/tutorial_mod/models/item/sofa.json
