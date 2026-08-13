@@ -61,6 +61,8 @@ public class ModBlocks {
             BLOCKS.register("strawberry_crop", () -> new StrawberryCrop(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
     public static final DeferredBlock<CornCrop> CORN_CROP =
             BLOCKS.register("corn_crop", () -> new CornCrop(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
+    public static final DeferredBlock<Block> ORANGE_NIGHTSTAND =
+            registerBlocks("orange_nightstand", () -> new Block(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).noOcclusion()));
 
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

@@ -73,6 +73,9 @@ public class ModItems {
     public static final DeferredItem<Item> A_MOMENT_APART_MUSIC_DISC = 
             ITEMS.register("a_moment_apart_music_disc",
                     () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.A_MOMENT_APART_SONG).stacksTo(1).rarity(Rarity.EPIC)));
+    
+    public static final DeferredItem<Item> BASEBALL_BAT = ITEMS.register("baseball_bat",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

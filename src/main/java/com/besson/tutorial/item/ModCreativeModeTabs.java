@@ -62,6 +62,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STRAWBERRY_SEEDS);
                         
                         output.accept(ModItems.A_MOMENT_APART_MUSIC_DISC);
+                        
+                        output.accept(ModItems.BASEBALL_BAT);
+                        output.accept(ModBlocks.ORANGE_NIGHTSTAND);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =

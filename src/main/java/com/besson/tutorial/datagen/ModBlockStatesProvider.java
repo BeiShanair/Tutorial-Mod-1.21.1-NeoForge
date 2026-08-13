@@ -6,6 +6,7 @@ import com.besson.tutorial.block.custom.CornCrop;
 import com.besson.tutorial.block.custom.StrawberryCrop;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -47,8 +48,15 @@ public class ModBlockStatesProvider extends BlockStateProvider {
 
         crop(ModBlocks.STRAWBERRY_CROP.get(), "strawberry_crop_stage", StrawberryCrop.AGE);
         crossCrop(ModBlocks.CORN_CROP.get(), "corn_crop_stage", CornCrop.AGE);
+        
+        simpleBlockWithoutBlockModel(ModBlocks.ORANGE_NIGHTSTAND);
     }
 
+    private <T extends Block> void simpleBlockWithoutBlockModel(DeferredBlock<T> block) {
+        ResourceLocation model = modLoc("block/" + block.getId().getPath());
+        simpleBlock(block.get(), models().getExistingFile(model));
+        simpleBlockItem(block.get(), models().getExistingFile(model));
+    }
     public void crop(CropBlock block, String name, IntegerProperty property) {
         Function<BlockState, ConfiguredModel[]> function = state ->
                 cropStates(state, name, property);

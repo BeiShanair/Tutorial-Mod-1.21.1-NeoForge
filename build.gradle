@@ -87,6 +87,8 @@ neoForge {
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             logLevel = org.slf4j.event.Level.DEBUG
+
+            systemProperty("terminal.jline", "true")
         }
     }
 

@@ -58,6 +58,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CornCrop.AGE, 8));
         add(ModBlocks.CORN_CROP.get(), createCropDrops(ModBlocks.CORN_CROP.get(),
                 ModItems.CORN.get(), ModItems.CORN.get(), builder2));
+        
+        dropSelf(ModBlocks.ORANGE_NIGHTSTAND.get());
     }
 
     protected LootTable.Builder createCopperOreLikeDrops(Block block, Item item, float min, float max) {
