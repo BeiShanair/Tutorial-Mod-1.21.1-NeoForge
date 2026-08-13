@@ -75,5 +75,7 @@ public class ModEnUsLangProvider extends LanguageProvider {
         
         add(ModItems.BASEBALL_BAT.get(), "Baseball Bat");
         add(ModBlocks.ORANGE_NIGHTSTAND.get(), "Orange Nightstand");
+        
+        add(ModBlocks.SIMPLE_ORANGE_CLOCK.get(), "Simple Orange Clock");
     }
 }

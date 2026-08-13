@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "tutorial_mod:block/simple_orange_clock",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "tutorial_mod:block/simple_orange_clock"
+    },
+    "facing=south": {
+      "model": "tutorial_mod:block/simple_orange_clock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tutorial_mod:block/simple_orange_clock",
+      "y": 270
+    }
+  }
+}

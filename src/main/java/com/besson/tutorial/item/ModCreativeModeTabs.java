@@ -65,6 +65,8 @@ public class ModCreativeModeTabs {
                         
                         output.accept(ModItems.BASEBALL_BAT);
                         output.accept(ModBlocks.ORANGE_NIGHTSTAND);
+                        
+                        output.accept(ModBlocks.SIMPLE_ORANGE_CLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =
