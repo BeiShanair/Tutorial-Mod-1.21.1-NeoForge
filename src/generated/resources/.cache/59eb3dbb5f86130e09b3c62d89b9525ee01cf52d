@@ -1,4 +1,5 @@
-// 1.21.1	2026-08-16T22:45:28.1288886	Loot Tables
+// 1.21.1	2026-08-16T23:24:14.1728935	Loot Tables
+fe709b3ebe7bcfb6b0db0b7a7ad0d875fbd854ce data/tutorial_mod/loot_table/blocks/bed.json
 049e7d46f6f5ab7f8d5005e39e8a966bf20d655f data/tutorial_mod/loot_table/blocks/corn_crop.json
 fa539bcef2805fb399e4e7407c54888fa91eb57e data/tutorial_mod/loot_table/blocks/ice_ether_block.json
 4b779772371fed5bbea086a826a94f0a7f6fce4a data/tutorial_mod/loot_table/blocks/ice_ether_button.json

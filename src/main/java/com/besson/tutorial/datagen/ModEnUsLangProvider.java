@@ -81,5 +81,7 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModBlocks.SOFA.get(), "Sofa");
         
         add(ModBlocks.LAMP_BLOCK.get(), "Lamp");
+        
+        add(ModBlocks.BED.get(), "Bed");
     }
 }

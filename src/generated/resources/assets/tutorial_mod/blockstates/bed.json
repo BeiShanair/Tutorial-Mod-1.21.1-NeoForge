@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,occupied=false,part=foot": {
+      "model": "tutorial_mod:block/bed",
+      "y": 90
+    },
+    "facing=east,occupied=false,part=head": {
+      "model": "tutorial_mod:block/bed",
+      "y": 90
+    },
+    "facing=east,occupied=true,part=foot": {
+      "model": "tutorial_mod:block/bed",
+      "y": 90
+    },
+    "facing=east,occupied=true,part=head": {
+      "model": "tutorial_mod:block/bed",
+      "y": 90
+    },
+    "facing=north,occupied=false,part=foot": {
+      "model": "tutorial_mod:block/bed"
+    },
+    "facing=north,occupied=false,part=head": {
+      "model": "tutorial_mod:block/bed"
+    },
+    "facing=north,occupied=true,part=foot": {
+      "model": "tutorial_mod:block/bed"
+    },
+    "facing=north,occupied=true,part=head": {
+      "model": "tutorial_mod:block/bed"
+    },
+    "facing=south,occupied=false,part=foot": {
+      "model": "tutorial_mod:block/bed",
+      "y": 180
+    },
+    "facing=south,occupied=false,part=head": {
+      "model": "tutorial_mod:block/bed",
+      "y": 180
+    },
+    "facing=south,occupied=true,part=foot": {
+      "model": "tutorial_mod:block/bed",
+      "y": 180
+    },
+    "facing=south,occupied=true,part=head": {
+      "model": "tutorial_mod:block/bed",
+      "y": 180
+    },
+    "facing=west,occupied=false,part=foot": {
+      "model": "tutorial_mod:block/bed",
+      "y": 270
+    },
+    "facing=west,occupied=false,part=head": {
+      "model": "tutorial_mod:block/bed",
+      "y": 270
+    },
+    "facing=west,occupied=true,part=foot": {
+      "model": "tutorial_mod:block/bed",
+      "y": 270
+    },
+    "facing=west,occupied=true,part=head": {
+      "model": "tutorial_mod:block/bed",
+      "y": 270
+    }
+  }
+}

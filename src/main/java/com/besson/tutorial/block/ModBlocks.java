@@ -5,6 +5,7 @@ import com.besson.tutorial.block.custom.*;
 import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.sound.ModSounds;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -71,6 +72,9 @@ public class ModBlocks {
     public static final DeferredBlock<LampBlock> LAMP_BLOCK =
             registerBlocks("lamp_block", () -> new LampBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F)
                     .noOcclusion().lightLevel(state -> state.getValue(LampBlock.LIT) ? 15 : 0)));
+    
+    public static final DeferredBlock<ModBedBlock> BED =
+            registerBlocks("bed", () -> new ModBedBlock(DyeColor.BLACK, BlockBehaviour.Properties.of().strength(2.0F, 3.0F).noOcclusion()));
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
