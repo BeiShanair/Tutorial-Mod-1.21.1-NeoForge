@@ -11,11 +11,13 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.PipeBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.MultiPartBlockStateBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import org.checkerframework.checker.units.qual.C;
@@ -64,8 +66,28 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         customHorizontalBlock(ModBlocks.BED);
         
         pillar(ModBlocks.PILLAR, "pillar");
+        
+        fence(ModBlocks.FENCE, "fence");
     }
 
+    private <T extends Block> void fence(DeferredBlock<T> block, String name) {
+        ModelFile post = models().getExistingFile(modLoc("block/" + name + "_post"));
+        ModelFile side = models().getExistingFile(modLoc("block/" + name + "_side"));
+
+        MultiPartBlockStateBuilder builder = getMultipartBuilder(block.get())
+                .part().modelFile(post).addModel().end();
+
+        PipeBlock.PROPERTY_BY_DIRECTION.entrySet().forEach(entry -> {
+            Direction direction = entry.getKey();
+            if (direction.getAxis().isHorizontal()) {
+                builder.part().modelFile(side).rotationY((((int) direction.toYRot()) + 180) % 360).addModel()
+                        .condition(entry.getValue(), true);
+            }
+        });
+        
+        simpleBlockItem(block.get(), models().getExistingFile(modLoc("block/" + name)));
+    }
+    
     private <T extends Block> void pillar(DeferredBlock<T> block, String name) {
         ModelFile single = models().getExistingFile(modLoc("block/" + name));
         ModelFile top = models().getExistingFile(modLoc("block/" + name + "_top"));

@@ -85,5 +85,7 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModBlocks.BED.get(), "Bed");
         
         add(ModBlocks.PILLAR.get(), "Pillar");
+        
+        add(ModBlocks.FENCE.get(), "Fence");
     }
 }

@@ -72,6 +72,8 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         add(ModBlocks.BED.get(), createSinglePropConditionTable(ModBlocks.BED.get(), BedBlock.PART, BedPart.HEAD));
         
         dropSelf(ModBlocks.PILLAR.get());
+        
+        dropSelf(ModBlocks.FENCE.get());
     }
 
     protected LootTable.Builder createCopperOreLikeDrops(Block block, Item item, float min, float max) {

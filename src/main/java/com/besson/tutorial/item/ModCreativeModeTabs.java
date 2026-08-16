@@ -75,6 +75,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BED);
                         
                         output.accept(ModBlocks.PILLAR);
+                        
+                        output.accept(ModBlocks.FENCE);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =
