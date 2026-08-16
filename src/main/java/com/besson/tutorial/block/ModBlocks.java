@@ -1,10 +1,7 @@
 package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialMod;
-import com.besson.tutorial.block.custom.CornCrop;
-import com.besson.tutorial.block.custom.SimpleOrangeClock;
-import com.besson.tutorial.block.custom.SofaBlock;
-import com.besson.tutorial.block.custom.StrawberryCrop;
+import com.besson.tutorial.block.custom.*;
 import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.sound.ModSounds;
 import net.minecraft.world.item.BlockItem;
@@ -25,7 +22,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> ICE_ETHER_BLOCK =
             registerBlocks("ice_ether_block", () -> new Block(BlockBehaviour.Properties.of().strength(1.5F, 6.0F)
-                    .requiresCorrectToolForDrops().sound(ModSounds.BLOCK_SOUNDS)));
+                    .requiresCorrectToolForDrops().sound(ModSounds.BLOCK_SOUNDS).lightLevel(state -> 5)));
     public static final DeferredBlock<Block> RAW_ICE_ETHER_BLOCK =
             registerBlocks("raw_ice_ether_block", () -> new Block(BlockBehaviour.Properties.of().strength(1.5F, 3.0F)));
     public static final DeferredBlock<Block> ICE_ETHER_ORE =
@@ -70,6 +67,10 @@ public class ModBlocks {
     
     public static final DeferredBlock<SofaBlock> SOFA = 
             registerBlocks("sofa", () -> new SofaBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).noOcclusion()));
+    
+    public static final DeferredBlock<LampBlock> LAMP_BLOCK =
+            registerBlocks("lamp_block", () -> new LampBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F)
+                    .noOcclusion().lightLevel(state -> state.getValue(LampBlock.LIT) ? 15 : 0)));
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }

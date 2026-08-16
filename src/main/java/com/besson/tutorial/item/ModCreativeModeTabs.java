@@ -69,6 +69,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SIMPLE_ORANGE_CLOCK);
                         
                         output.accept(ModBlocks.SOFA);
+                        
+                        output.accept(ModBlocks.LAMP_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =
