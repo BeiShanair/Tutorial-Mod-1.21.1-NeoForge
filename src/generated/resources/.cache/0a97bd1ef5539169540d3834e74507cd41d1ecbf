@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-16T23:24:14.176866	Block States: tutorial_mod
+// 1.21.1	2026-08-16T23:47:10.7447009	Block States: tutorial_mod
 50e2d127aae0cf7a1569baeb4dba639eb0f76126 assets/tutorial_mod/blockstates/bed.json
 1e77bebd6670b9446f08ccf09376e1596015f060 assets/tutorial_mod/blockstates/corn_crop.json
 fbc65d526cfd378585c593489a63e97d7c2682ab assets/tutorial_mod/blockstates/ice_ether_block.json
@@ -14,6 +14,7 @@ f47380fb0bc7ccbbbbb38361164032b1205dfd2f assets/tutorial_mod/blockstates/ice_eth
 a8102511b6ca15d03d851e5488aa44ce05e71852 assets/tutorial_mod/blockstates/ice_ether_wall.json
 6d3e98caebb4df38ba50062612409b2db846b534 assets/tutorial_mod/blockstates/lamp_block.json
 6cad061bd0fe57cac6d5690d6a95471d37725831 assets/tutorial_mod/blockstates/orange_nightstand.json
+f464ac61516778fe14bbb0abef261b83e7dae4d1 assets/tutorial_mod/blockstates/pillar.json
 148923ccf48e4b5cd1390b16c036b7bf6cbd027f assets/tutorial_mod/blockstates/raw_ice_ether_block.json
 ecbbd249bd6503f9dc0137ed07114d1aca2e4e4b assets/tutorial_mod/blockstates/simple_orange_clock.json
 71e203c9825f11c164df5eddc7d4a5e85fad85c0 assets/tutorial_mod/blockstates/sofa.json
@@ -75,6 +76,7 @@ c0e12d3baaa0ae2c1dbf68cf368fec279720d439 assets/tutorial_mod/models/item/ice_eth
 dfd58c30ba177d98d845e42b66159f607c3ca7ac assets/tutorial_mod/models/item/ice_ether_trapdoor.json
 66b94d651a654ed15f0c08ae8a8bb472d04965da assets/tutorial_mod/models/item/lamp_block.json
 ff253ca37ab18ddbe283a072f7592de751afa3be assets/tutorial_mod/models/item/orange_nightstand.json
+457a2f378bf415650380f8eba13383752f5924b7 assets/tutorial_mod/models/item/pillar.json
 81087f66b5dea0f1c62aa3069cdcf9c5ff2b7d6a assets/tutorial_mod/models/item/raw_ice_ether_block.json
 b55905623e695a9151266db6c73e751f740aa0c2 assets/tutorial_mod/models/item/simple_orange_clock.json
 acaa80152d390453bf38bb773a4071200f3b7356 assets/tutorial_mod/models/item/sofa.json

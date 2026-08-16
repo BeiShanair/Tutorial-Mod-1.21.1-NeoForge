@@ -75,6 +75,11 @@ public class ModBlocks {
     
     public static final DeferredBlock<ModBedBlock> BED =
             registerBlocks("bed", () -> new ModBedBlock(DyeColor.BLACK, BlockBehaviour.Properties.of().strength(2.0F, 3.0F).noOcclusion()));
+   
+    public static final DeferredBlock<ModPillarBlock> PILLAR =
+            registerBlocks("pillar", () -> new ModPillarBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).noOcclusion()));
+    
+    
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }

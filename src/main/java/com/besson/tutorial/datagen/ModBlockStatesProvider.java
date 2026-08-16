@@ -3,6 +3,7 @@ package com.besson.tutorial.datagen;
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.block.custom.CornCrop;
+import com.besson.tutorial.block.custom.ModPillarBlock;
 import com.besson.tutorial.block.custom.SofaBlock;
 import com.besson.tutorial.block.custom.StrawberryCrop;
 import net.minecraft.core.Direction;
@@ -61,8 +62,34 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         simpleBlockWithoutBlockModel(ModBlocks.LAMP_BLOCK);
         
         customHorizontalBlock(ModBlocks.BED);
+        
+        pillar(ModBlocks.PILLAR, "pillar");
     }
 
+    private <T extends Block> void pillar(DeferredBlock<T> block, String name) {
+        ModelFile single = models().getExistingFile(modLoc("block/" + name));
+        ModelFile top = models().getExistingFile(modLoc("block/" + name + "_top"));
+        ModelFile bottom = models().getExistingFile(modLoc("block/" + name + "_bottom"));
+        ModelFile middle = models().getExistingFile(modLoc("block/" + name + "_middle"));
+        
+        getVariantBuilder(block.get()).forAllStates(state -> {
+            ModPillarBlock.Type type = state.getValue(ModPillarBlock.TYPE);
+            ModelFile model;
+            
+            switch (type) {
+                case TOP -> model = top;
+                case BOTTOM -> model = bottom;
+                case MIDDLE -> model = middle;
+                default -> model = single;
+            }
+            
+            return ConfiguredModel.builder()
+                    .modelFile(model)
+                    .build();
+        });
+        simpleBlockItem(block.get(), single);
+    }
+    
     private <T extends Block> void sofa(DeferredBlock<T> sofa, String name) {
         ModelFile single = models().getExistingFile(modLoc("block/" + name));
         ModelFile left = models().getExistingFile(modLoc("block/" + name + "_left"));

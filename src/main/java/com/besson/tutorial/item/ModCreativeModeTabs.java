@@ -73,6 +73,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LAMP_BLOCK);
                         
                         output.accept(ModBlocks.BED);
+                        
+                        output.accept(ModBlocks.PILLAR);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =
