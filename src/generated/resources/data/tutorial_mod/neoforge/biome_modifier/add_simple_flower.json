@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#c:is_plains",
+  "features": "tutorial_mod:simple_flower_placed",
+  "step": "vegetal_decoration"
+}

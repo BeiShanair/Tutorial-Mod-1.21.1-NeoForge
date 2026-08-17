@@ -1,4 +1,7 @@
-// 1.21.1	2026-08-17T14:06:28.7227638	Registries
+// 1.21.1	2026-08-17T14:53:57.712965	Registries
 193ed4d88831e806da783b1be64f7c69aab51fde data/tutorial_mod/neoforge/biome_modifier/add_ice_ether_tree.json
+853f3944eff32b13b5b1e5697423c8ee78e7325b data/tutorial_mod/neoforge/biome_modifier/add_simple_flower.json
 fffd07c9a51df8d7a20a696f92a369e65340ac76 data/tutorial_mod/worldgen/configured_feature/ice_ether_tree.json
+8f843a7eb2f418654b2758f7a55af254f0baacc4 data/tutorial_mod/worldgen/configured_feature/simple_flower.json
 d288d56943e2182c687111fd5ebc8c551066d563 data/tutorial_mod/worldgen/placed_feature/ice_ether_tree_placed.json
+db0b4bc51dd17a4eeb18816e7c06acd09929c352 data/tutorial_mod/worldgen/placed_feature/simple_flower_placed.json
