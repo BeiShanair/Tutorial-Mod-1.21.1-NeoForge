@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": "tutorial_mod:end_ice_ether_ore_placed",
+  "step": "underground_ores"
+}
