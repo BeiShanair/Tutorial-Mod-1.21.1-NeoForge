@@ -102,5 +102,8 @@ public class ModEnUsLangProvider extends LanguageProvider {
         
         add(ModBlocks.SIMPLE_FLOWER.get(), "Simple Flower");
         add(ModBlocks.POTTED_SIMPLE_FLOWER.get(), "Simple Flower Pot");
+        
+        add(ModItems.ICE_ETHER_SIGN.get(), "Ice Ether Sign");
+        add(ModItems.ICE_ETHER_HANGING_SIGN.get(), "Ice Ether Hanging Sign");
     }
 }

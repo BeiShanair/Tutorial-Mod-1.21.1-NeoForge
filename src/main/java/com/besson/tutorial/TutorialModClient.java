@@ -1,5 +1,6 @@
 package com.besson.tutorial;
 
+import com.besson.tutorial.blockentity.ModBlockEntities;
 import com.besson.tutorial.entity.ModEntities;
 import com.besson.tutorial.fluid.BaseFluidType;
 import com.besson.tutorial.fluid.ModFluidTypes;
@@ -8,6 +9,8 @@ import com.besson.tutorial.renderer.SeatEntityRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -52,5 +55,8 @@ public class TutorialModClient {
     @SubscribeEvent
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntities.SEAT.get(), SeatEntityRenderer::new);
+        
+        event.registerBlockEntityRenderer(ModBlockEntities.MOD_SIGN.get(), SignRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.MOD_HANGING_SIGN.get(), HangingSignRenderer::new);
     }
 }

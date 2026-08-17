@@ -112,6 +112,17 @@ public class ModBlocks {
     public static final DeferredBlock<Block> POTTED_SIMPLE_FLOWER = BLOCKS.register("potted_simple_flower",
             () -> new FlowerPotBlock(() -> (FlowerPotBlock) Blocks.FLOWER_POT, SIMPLE_FLOWER, BlockBehaviour.Properties.ofFullCopy(Blocks.POTTED_DANDELION)));
     
+    public static final WoodType ICE_ETHER_WOOD_TYPE = WoodType.register(new WoodType(TutorialMod.MOD_ID + ":ice_ether", BlockSetType.OAK));
+    public static final DeferredBlock<Block> ICE_ETHER_SIGN = BLOCKS.register("ice_ether_sign",
+            () -> new ModStandingSignBlock(ICE_ETHER_WOOD_TYPE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN)));
+    public static final DeferredBlock<Block> ICE_ETHER_HANGING_SIGN = BLOCKS.register("ice_ether_hanging_sign",
+            () -> new ModHangingSignBlock(ICE_ETHER_WOOD_TYPE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_HANGING_SIGN)));
+    public static final DeferredBlock<Block> ICE_ETHER_WALL_SIGN = BLOCKS.register("ice_ether_wall_sign",
+            () -> new ModWallSignBlock(ICE_ETHER_WOOD_TYPE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_SIGN)));
+    public static final DeferredBlock<Block> ICE_ETHER_WALL_HANGING_SIGN = BLOCKS.register("ice_ether_wall_hanging_sign",
+            () -> new ModWallHangingSignBlock(ICE_ETHER_WOOD_TYPE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN)));
+    
+    
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }

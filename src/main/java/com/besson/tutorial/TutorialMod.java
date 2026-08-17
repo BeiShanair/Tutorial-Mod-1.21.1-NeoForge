@@ -9,6 +9,7 @@ import com.besson.tutorial.item.ModCreativeModeTabs;
 import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.sound.ModSounds;
 import com.besson.tutorial.villager.ModVillagers;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import org.slf4j.Logger;
@@ -81,6 +82,8 @@ public class TutorialMod {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SIMPLE_FLOWER.getId(), ModBlocks.POTTED_SIMPLE_FLOWER);
         });
+
+        Sheets.addWoodType(ModBlocks.ICE_ETHER_WOOD_TYPE);
     }
 
     // Add the example block item to the building blocks tab

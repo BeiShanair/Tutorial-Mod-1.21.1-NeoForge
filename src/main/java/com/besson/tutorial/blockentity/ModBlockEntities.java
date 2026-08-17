@@ -3,6 +3,8 @@ package com.besson.tutorial.blockentity;
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.ModBlocks;
 import com.besson.tutorial.blockentity.custom.ModBedBlockEntity;
+import com.besson.tutorial.blockentity.custom.ModHangingSignBlockEntity;
+import com.besson.tutorial.blockentity.custom.ModSignBlockEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
@@ -17,6 +19,15 @@ public class ModBlockEntities {
     public static final Supplier<BlockEntityType<ModBedBlockEntity>> BED = 
             BLOCK_ENTITIES.register("bed",
                     () -> BlockEntityType.Builder.of(ModBedBlockEntity::new, ModBlocks.BED.get()).build(null));
+    
+    public static final Supplier<BlockEntityType<ModSignBlockEntity>> MOD_SIGN =
+            BLOCK_ENTITIES.register("mod_sign",
+                    () -> BlockEntityType.Builder.of(ModSignBlockEntity::new,
+                            ModBlocks.ICE_ETHER_SIGN.get(), ModBlocks.ICE_ETHER_WALL_SIGN.get()).build(null));
+    public static final Supplier<BlockEntityType<ModHangingSignBlockEntity>> MOD_HANGING_SIGN =
+            BLOCK_ENTITIES.register("mod_hanging_sign",
+                    () -> BlockEntityType.Builder.of(ModHangingSignBlockEntity::new,
+                            ModBlocks.ICE_ETHER_HANGING_SIGN.get(), ModBlocks.ICE_ETHER_WALL_HANGING_SIGN.get()).build(null));
     
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

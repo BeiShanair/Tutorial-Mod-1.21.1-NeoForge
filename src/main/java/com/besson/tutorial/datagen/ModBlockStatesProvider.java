@@ -9,10 +9,7 @@ import com.besson.tutorial.block.custom.StrawberryCrop;
 import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.PipeBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -94,6 +91,11 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         simpleBlock(ModBlocks.SIMPLE_FLOWER.get(),
                 models().cross("simple_flower", modLoc("block/simple_flower")).renderType("cutout"));
         pottedFlower(ModBlocks.POTTED_SIMPLE_FLOWER, "simple_flower");
+        
+        signBlock((StandingSignBlock) ModBlocks.ICE_ETHER_SIGN.get(), (WallSignBlock) ModBlocks.ICE_ETHER_WALL_SIGN.get(),
+                blockTexture(ModBlocks.ICE_ETHER_PLANKS.get()));
+        hangingSignBlock((CeilingHangingSignBlock) ModBlocks.ICE_ETHER_HANGING_SIGN.get(), (WallHangingSignBlock) ModBlocks.ICE_ETHER_WALL_HANGING_SIGN.get(),
+                blockTexture(ModBlocks.ICE_ETHER_PLANKS.get()));
     }
 
     private <T extends Block> void pottedFlower(DeferredBlock<T> block, String name) {

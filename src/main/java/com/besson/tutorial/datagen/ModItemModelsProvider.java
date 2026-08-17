@@ -57,6 +57,9 @@ public class ModItemModelsProvider extends ItemModelProvider {
         
         blockItem(ModBlocks.ICE_ETHER_TREE_SAPLING);
         blockItem(ModBlocks.SIMPLE_FLOWER);
+        
+        basicItem(ModItems.ICE_ETHER_SIGN.get());
+        basicItem(ModItems.ICE_ETHER_HANGING_SIGN.get());
     }
     
     private <T extends Block> void blockItem(DeferredBlock<T> block) {

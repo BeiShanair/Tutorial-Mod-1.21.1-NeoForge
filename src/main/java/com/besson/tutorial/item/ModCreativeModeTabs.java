@@ -90,6 +90,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ICE_ETHER_TREE_SAPLING);
                         
                         output.accept(ModBlocks.SIMPLE_FLOWER);
+                        
+                        output.accept(ModItems.ICE_ETHER_SIGN);
+                        output.accept(ModItems.ICE_ETHER_HANGING_SIGN);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =

@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-17T14:28:32.0382244	Item Models: tutorial_mod
+// 1.21.1	2026-08-17T21:41:38.7471841	Item Models: tutorial_mod
 30f5da21ac3a5e5bd5779568e1cc423842be68bf assets/tutorial_mod/models/item/anthracite.json
 a1cbb06c69e9fff41f8fd629f3b74a4fe6ffe8a6 assets/tutorial_mod/models/item/anthracite2.json
 1dd1324a77ce7e330d07bb224aa7b75a84eecc2b assets/tutorial_mod/models/item/a_moment_apart_music_disc.json
@@ -15,8 +15,10 @@ bfc36e06ab35d0b5d085a88db42950cdeb3e71ee assets/tutorial_mod/models/item/ice_eth
 146cf93dc19f9fc2e854715fe0e1c00a12156604 assets/tutorial_mod/models/item/ice_ether_chestplate.json
 0fcf1172ad558242b439d49657c843f028b2d447 assets/tutorial_mod/models/item/ice_ether_door.json
 89531c939b9f72873c41e5103d7234af525f29a1 assets/tutorial_mod/models/item/ice_ether_fence.json
+711c328f0d52ecf37396996ac2e25fe6fd5fd255 assets/tutorial_mod/models/item/ice_ether_hanging_sign.json
 4a0451a61f213736124ad00e4de596ab6b10a444 assets/tutorial_mod/models/item/ice_ether_helmet.json
 7717f91cfe8350a894418d32408dd42336e2995c assets/tutorial_mod/models/item/ice_ether_leggings.json
+4181129e05990f293f72cb66a18ea0dbbccf4623 assets/tutorial_mod/models/item/ice_ether_sign.json
 0fa50a1022db80b2cc52c5303cb676bc3348aa4d assets/tutorial_mod/models/item/ice_ether_tree_sapling.json
 71438add06f9da59ad63f1abe9c639358aca2e5e assets/tutorial_mod/models/item/ice_ether_wall.json
 16601133e98111d602776705fde802a14305a030 assets/tutorial_mod/models/item/pickaxe_axe_item.json

@@ -88,6 +88,15 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SIMPLE_FLOWER.get());
         add(ModBlocks.POTTED_SIMPLE_FLOWER.get(), 
                 createPotFlowerItemTable(ModBlocks.POTTED_SIMPLE_FLOWER.get()));
+        
+        add(ModBlocks.ICE_ETHER_SIGN.get(), 
+                createSingleItemTable(ModItems.ICE_ETHER_SIGN.get()));
+        add(ModBlocks.ICE_ETHER_WALL_SIGN.get(), 
+                createSingleItemTable(ModItems.ICE_ETHER_SIGN.get()));
+        add(ModBlocks.ICE_ETHER_HANGING_SIGN.get(),
+                createSingleItemTable(ModItems.ICE_ETHER_HANGING_SIGN.get()));
+        add(ModBlocks.ICE_ETHER_WALL_HANGING_SIGN.get(),
+                createSingleItemTable(ModItems.ICE_ETHER_HANGING_SIGN.get()));
     }
 
     protected LootTable.Builder createCopperOreLikeDrops(Block block, Item item, float min, float max) {
