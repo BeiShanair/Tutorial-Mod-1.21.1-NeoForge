@@ -52,6 +52,8 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(ModItems.STRAWBERRY_SEEDS.get());
         
         basicItem(ModItems.A_MOMENT_APART_MUSIC_DISC.get());
+        
+        basicItem(ModItems.SEWAGE_BUCKET.get());
     }
 
     private void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> base) {

@@ -1,8 +1,13 @@
 package com.besson.tutorial;
 
 import com.besson.tutorial.entity.ModEntities;
+import com.besson.tutorial.fluid.BaseFluidType;
+import com.besson.tutorial.fluid.ModFluidTypes;
+import com.besson.tutorial.fluid.ModFluids;
 import com.besson.tutorial.renderer.SeatEntityRenderer;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -10,6 +15,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
@@ -30,6 +36,17 @@ public class TutorialModClient {
         // Some client setup code
         TutorialMod.LOGGER.info("HELLO FROM CLIENT SETUP");
         TutorialMod.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        
+        event.enqueueWork(() -> {
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SEWAGE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.STILL_SEWAGE.get(), RenderType.translucent());
+        });
+    }
+    
+    @SubscribeEvent
+    public static void onClientExtensions(RegisterClientExtensionsEvent event) {
+        event.registerFluidType(((BaseFluidType) ModFluidTypes.SEWAGE_FLUID_TYPE.get()).getClientExtensions(),
+                ModFluidTypes.SEWAGE_FLUID_TYPE.get());
     }
     
     @SubscribeEvent

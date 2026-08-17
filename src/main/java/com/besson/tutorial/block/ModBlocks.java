@@ -2,6 +2,7 @@ package com.besson.tutorial.block;
 
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.custom.*;
+import com.besson.tutorial.fluid.ModFluids;
 import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.sound.ModSounds;
 import net.minecraft.world.item.BlockItem;
@@ -11,6 +12,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -82,6 +84,10 @@ public class ModBlocks {
     public static final DeferredBlock<ModFenceBlock> FENCE =
             registerBlocks("fence", () -> new ModFenceBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).noOcclusion()));
     
+    public static final DeferredBlock<SewageFluidBlock> SEWAGE_BLOCK = BLOCKS.register("sewage",
+            () -> new SewageFluidBlock(ModFluids.STILL_SEWAGE.get(), BlockBehaviour.Properties.of()
+                    .replaceable().strength(100f).liquid()
+                    .pushReaction(PushReaction.DESTROY).noLootTable()));
     
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

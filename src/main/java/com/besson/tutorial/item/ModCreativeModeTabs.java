@@ -77,6 +77,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PILLAR);
                         
                         output.accept(ModBlocks.FENCE);
+                        
+                        output.accept(ModItems.SEWAGE_BUCKET);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =
