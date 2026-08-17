@@ -5,6 +5,7 @@ import com.besson.tutorial.block.custom.*;
 import com.besson.tutorial.fluid.ModFluids;
 import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.sound.ModSounds;
+import com.besson.tutorial.worldgen.tree.ModTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -101,6 +102,9 @@ public class ModBlocks {
             registerBlocks("ice_ether_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     public static final DeferredBlock<ModPlankBlock> ICE_ETHER_PLANKS =
             registerBlocks("ice_ether_planks", () -> new ModPlankBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+    
+    public static final DeferredBlock<SaplingBlock> ICE_ETHER_TREE_SAPLING =
+            registerBlocks("ice_ether_tree_sapling", () -> new SaplingBlock(ModTreeGrower.ICE_ETHER_TREE, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
     
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

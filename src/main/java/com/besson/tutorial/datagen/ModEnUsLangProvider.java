@@ -97,5 +97,7 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModBlocks.STRIPPED_ICE_ETHER_WOOD.get(), "Stripped Ice Ether Wood");
         add(ModBlocks.ICE_ETHER_PLANKS.get(), "Ice Ether Planks");
         add(ModBlocks.ICE_ETHER_LEAVES.get(), "Ice Ether Leaves");
+        
+        add(ModBlocks.ICE_ETHER_TREE_SAPLING.get(), "Ice Ether Sapling");
     }
 }

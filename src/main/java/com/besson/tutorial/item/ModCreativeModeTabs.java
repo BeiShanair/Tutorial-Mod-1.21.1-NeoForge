@@ -86,6 +86,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.STRIPPED_ICE_ETHER_WOOD);
                         output.accept(ModBlocks.ICE_ETHER_LEAVES);
                         output.accept(ModBlocks.ICE_ETHER_PLANKS);
+                        
+                        output.accept(ModBlocks.ICE_ETHER_TREE_SAPLING);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =
