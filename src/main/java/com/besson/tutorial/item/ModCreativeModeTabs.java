@@ -79,6 +79,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.FENCE);
                         
                         output.accept(ModItems.SEWAGE_BUCKET);
+                        
+                        output.accept(ModBlocks.ICE_ETHER_LOG);
+                        output.accept(ModBlocks.ICE_ETHER_WOOD);
+                        output.accept(ModBlocks.STRIPPED_ICE_ETHER_LOG);
+                        output.accept(ModBlocks.STRIPPED_ICE_ETHER_WOOD);
+                        output.accept(ModBlocks.ICE_ETHER_LEAVES);
+                        output.accept(ModBlocks.ICE_ETHER_PLANKS);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =

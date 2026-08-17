@@ -90,5 +90,12 @@ public class ModEnUsLangProvider extends LanguageProvider {
         
         add(ModItems.SEWAGE_BUCKET.get(), "Sewage Bucket");
         add(ModBlocks.SEWAGE_BLOCK.get(), "Sewage");
+        
+        add(ModBlocks.ICE_ETHER_LOG.get(), "Ice Ether Log");
+        add(ModBlocks.ICE_ETHER_WOOD.get(), "Ice Ether Wood");
+        add(ModBlocks.STRIPPED_ICE_ETHER_LOG.get(), "Stripped Ice Ether Log");
+        add(ModBlocks.STRIPPED_ICE_ETHER_WOOD.get(), "Stripped Ice Ether Wood");
+        add(ModBlocks.ICE_ETHER_PLANKS.get(), "Ice Ether Planks");
+        add(ModBlocks.ICE_ETHER_LEAVES.get(), "Ice Ether Leaves");
     }
 }

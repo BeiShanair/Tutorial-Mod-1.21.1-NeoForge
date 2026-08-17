@@ -1,3 +1,6 @@
-// 1.21.1	2025-12-06T02:47:00.8357619	Tags for minecraft:item mod id tutorial_mod
+// 1.21.1	2026-08-17T12:51:17.3718227	Tags for minecraft:item mod id tutorial_mod
+9e8c2c4fc956cb8a4c77f51f7c62b0409d964b6d data/minecraft/tags/item/leaves.json
+f45f9656f639c8f1efa97f656c08b0915c9f1e18 data/minecraft/tags/item/logs_that_burn.json
+c07240762392d283c7aa4c8145eec1cf73e59bf1 data/minecraft/tags/item/planks.json
 4cb846a3a0e605468f4aa17a698bb0c9d8d2fdb8 data/minecraft/tags/item/trimmable_armor.json
 e557e371366acff309e49781aec39c0aad8d613d data/tutorial_mod/tags/item/sugar_tag.json

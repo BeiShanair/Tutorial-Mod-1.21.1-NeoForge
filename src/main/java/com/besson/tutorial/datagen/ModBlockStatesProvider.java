@@ -12,6 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.PipeBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -70,6 +71,22 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         fence(ModBlocks.FENCE, "fence");
         
         simpleBlockWithoutBlockModel(ModBlocks.SEWAGE_BLOCK);
+        
+        logBlock((RotatedPillarBlock) ModBlocks.ICE_ETHER_LOG.get());
+        axisBlock((RotatedPillarBlock) ModBlocks.ICE_ETHER_WOOD.get(), blockTexture(ModBlocks.ICE_ETHER_LOG.get()), blockTexture(ModBlocks.ICE_ETHER_LOG.get()));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_ICE_ETHER_LOG.get(), ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/stripped_ice_ether_log"),
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/stripped_ice_ether_log_top"));
+        axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_ICE_ETHER_WOOD.get(), ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/stripped_ice_ether_log"),
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/stripped_ice_ether_log"));
+        
+        blockItem(ModBlocks.ICE_ETHER_LOG);
+        blockItem(ModBlocks.ICE_ETHER_WOOD);
+        blockItem(ModBlocks.STRIPPED_ICE_ETHER_LOG);
+        blockItem(ModBlocks.STRIPPED_ICE_ETHER_WOOD);
+        
+        simpleBlockWithItem(ModBlocks.ICE_ETHER_PLANKS.get(), cubeAll(ModBlocks.ICE_ETHER_PLANKS.get()));
+        simpleBlockWithItem(ModBlocks.ICE_ETHER_LEAVES.get(), 
+                models().cubeAll("ice_ether_leaves", modLoc("block/ice_ether_leaves")).renderType("cutout"));
     }
 
     private <T extends Block> void fence(DeferredBlock<T> block, String name) {

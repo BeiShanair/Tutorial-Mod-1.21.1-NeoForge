@@ -48,5 +48,15 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(ModBlockTags.PICKAXE_AXE_MINEABLE)
                 .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .addTag(BlockTags.MINEABLE_WITH_AXE);
+        
+        tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ICE_ETHER_LOG.get())
+                .add(ModBlocks.ICE_ETHER_WOOD.get())
+                .add(ModBlocks.STRIPPED_ICE_ETHER_LOG.get())
+                .add(ModBlocks.STRIPPED_ICE_ETHER_WOOD.get());
+        tag(BlockTags.LEAVES)
+                .add(ModBlocks.ICE_ETHER_LEAVES.get());
+        tag(BlockTags.PLANKS)
+                .add(ModBlocks.ICE_ETHER_PLANKS.get());
     }
 }

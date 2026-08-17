@@ -89,6 +89,19 @@ public class ModBlocks {
                     .replaceable().strength(100f).liquid()
                     .pushReaction(PushReaction.DESTROY).noLootTable()));
     
+    public static final DeferredBlock<ModRotatedPillarBlock> ICE_ETHER_LOG =
+            registerBlocks("ice_ether_log", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<ModRotatedPillarBlock> ICE_ETHER_WOOD =
+            registerBlocks("ice_ether_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
+    public static final DeferredBlock<ModRotatedPillarBlock> STRIPPED_ICE_ETHER_LOG =
+            registerBlocks("stripped_ice_ether_log", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
+    public static final DeferredBlock<ModRotatedPillarBlock> STRIPPED_ICE_ETHER_WOOD =
+            registerBlocks("stripped_ice_ether_wood", () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final DeferredBlock<ModLeavesBlock> ICE_ETHER_LEAVES =
+            registerBlocks("ice_ether_leaves", () -> new ModLeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<ModPlankBlock> ICE_ETHER_PLANKS =
+            registerBlocks("ice_ether_planks", () -> new ModPlankBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
+    
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }

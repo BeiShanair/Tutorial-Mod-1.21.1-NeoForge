@@ -74,6 +74,13 @@ public class ModBlockLootTablesProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.PILLAR.get());
         
         dropSelf(ModBlocks.FENCE.get());
+        
+        dropSelf(ModBlocks.ICE_ETHER_LOG.get());
+        dropSelf(ModBlocks.ICE_ETHER_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_ICE_ETHER_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_ICE_ETHER_WOOD.get());
+        dropSelf(ModBlocks.ICE_ETHER_LEAVES.get());
+        dropSelf(ModBlocks.ICE_ETHER_PLANKS.get());
     }
 
     protected LootTable.Builder createCopperOreLikeDrops(Block block, Item item, float min, float max) {
