@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-17T13:24:39.5569775	Loot Tables
+// 1.21.1	2026-08-17T14:28:32.036176	Loot Tables
 fe709b3ebe7bcfb6b0db0b7a7ad0d875fbd854ce data/tutorial_mod/loot_table/blocks/bed.json
 049e7d46f6f5ab7f8d5005e39e8a966bf20d655f data/tutorial_mod/loot_table/blocks/corn_crop.json
 73648a15344cc74eb33163d9237388eda14322af data/tutorial_mod/loot_table/blocks/fence.json
@@ -21,7 +21,9 @@ cd8f05934133ec50ac6fb5019f6e263f11c0b074 data/tutorial_mod/loot_table/blocks/ice
 dd0906cd46a32a1c0c891c158e609d0cebe511da data/tutorial_mod/loot_table/blocks/lamp_block.json
 57d2e88516f0479724d42a0181ae5fc812302657 data/tutorial_mod/loot_table/blocks/orange_nightstand.json
 c5f1c42a3ec315ba7ffa6881b5d23be247d773a6 data/tutorial_mod/loot_table/blocks/pillar.json
+5aa69559a3d21aebdd1744bb660212e9944d03fa data/tutorial_mod/loot_table/blocks/potted_simple_flower.json
 cc8eac18b86493813e18f08741cbfa35c42b8508 data/tutorial_mod/loot_table/blocks/raw_ice_ether_block.json
+a648c8cdd1de9e22d7b67f42331c33c8244369eb data/tutorial_mod/loot_table/blocks/simple_flower.json
 4b78d4d8fb04ea94a50da524046fd8cad4914715 data/tutorial_mod/loot_table/blocks/simple_orange_clock.json
 1aa93c97799cc5990f887f0777112e624eb2608b data/tutorial_mod/loot_table/blocks/sofa.json
 a10a465a705d61555ec3fe902398c968f96cf6e1 data/tutorial_mod/loot_table/blocks/strawberry_crop.json

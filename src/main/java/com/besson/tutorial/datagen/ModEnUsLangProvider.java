@@ -99,5 +99,8 @@ public class ModEnUsLangProvider extends LanguageProvider {
         add(ModBlocks.ICE_ETHER_LEAVES.get(), "Ice Ether Leaves");
         
         add(ModBlocks.ICE_ETHER_TREE_SAPLING.get(), "Ice Ether Sapling");
+        
+        add(ModBlocks.SIMPLE_FLOWER.get(), "Simple Flower");
+        add(ModBlocks.POTTED_SIMPLE_FLOWER.get(), "Simple Flower Pot");
     }
 }

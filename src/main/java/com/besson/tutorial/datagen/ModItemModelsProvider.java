@@ -56,6 +56,7 @@ public class ModItemModelsProvider extends ItemModelProvider {
         basicItem(ModItems.SEWAGE_BUCKET.get());
         
         blockItem(ModBlocks.ICE_ETHER_TREE_SAPLING);
+        blockItem(ModBlocks.SIMPLE_FLOWER);
     }
     
     private <T extends Block> void blockItem(DeferredBlock<T> block) {

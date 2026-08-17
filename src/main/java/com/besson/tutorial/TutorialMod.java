@@ -10,6 +10,7 @@ import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.sound.ModSounds;
 import com.besson.tutorial.villager.ModVillagers;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -76,6 +77,10 @@ public class TutorialMod {
         LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
 
         Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
+        
+        event.enqueueWork(() -> {
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.SIMPLE_FLOWER.getId(), ModBlocks.POTTED_SIMPLE_FLOWER);
+        });
     }
 
     // Add the example block item to the building blocks tab
