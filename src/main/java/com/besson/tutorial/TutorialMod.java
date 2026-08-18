@@ -11,7 +11,10 @@ import com.besson.tutorial.sound.ModSounds;
 import com.besson.tutorial.villager.ModVillagers;
 import com.besson.tutorial.worldgen.biome.ModSurfaceRules;
 import com.besson.tutorial.worldgen.biome.ModTerraBlenderAPI;
+import net.kyrptonaught.customportalapi.CustomPortalRegistrationEvent;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import org.slf4j.Logger;
@@ -67,9 +70,22 @@ public class TutorialMod {
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+        
+        modEventBus.addListener(this::registerPortals);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    }
+    
+    private void registerPortals(CustomPortalRegistrationEvent event) {
+        event.register(
+                CustomPortalBuilder.beginPortal()
+                        .frameBlock(ModBlocks.ICE_ETHER_BLOCK.get())
+                        .lightWithItem(ModItems.ICE_ETHER.get())
+                        .forcedSize(3, 3)
+                        .destDimID(ResourceLocation.fromNamespaceAndPath(MOD_ID, "test"))
+                        .tintColor(0xc76a4f)
+        );
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

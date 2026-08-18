@@ -20,6 +20,11 @@ group = mod_group_id
 repositories {
     // Add here additional repositories if required by some of the dependencies below.
     maven { url = 'https://maven.minecraftforge.net/' }
+
+    maven {
+        name = "AzureDoom Mods"
+        url = "https://maven.azuredoom.com/mods"
+    }
 }
 
 base {
@@ -137,6 +142,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
     implementation 'com.github.glitchfiend:TerraBlender-neoforge:1.21.1-4.1.0.8'
+    implementation "net.kyrptonaught.customportalapi:cpapireforged-neo-1.21.1:1.2.2"
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

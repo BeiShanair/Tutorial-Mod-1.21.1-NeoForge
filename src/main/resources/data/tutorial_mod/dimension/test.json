@@ -1,0 +1,72 @@
+{
+  "type": "tutorial_mod:test_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "tutorial_mod:diamond_biome",
+          "parameters": {
+            "temperature": 0.3,
+            "humidity": 0.5,
+            "continentalness": 0.1,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:jungle",
+          "parameters": {
+            "temperature": 0.8,
+            "humidity": 0.2,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:plains",
+          "parameters": {
+            "temperature": 0.5,
+            "humidity": 0.2,
+            "continentalness": 0.1,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:ocean",
+          "parameters": {
+            "temperature": 0.5,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:forest",
+          "parameters": {
+            "temperature": 0.2,
+            "humidity": 0.5,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}
