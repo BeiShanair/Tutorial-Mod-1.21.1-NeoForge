@@ -93,6 +93,9 @@ public class ModCreativeModeTabs {
                         
                         output.accept(ModItems.ICE_ETHER_SIGN);
                         output.accept(ModItems.ICE_ETHER_HANGING_SIGN);
+                        
+                        output.accept(ModItems.ICE_ETHER_BOAT);
+                        output.accept(ModItems.ICE_ETHER_CHEST_BOAT);
                     }).build());
 
     public static final Supplier<CreativeModeTab> MATERIAL =

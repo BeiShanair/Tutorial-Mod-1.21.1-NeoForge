@@ -2,11 +2,9 @@ package com.besson.tutorial.item;
 
 import com.besson.tutorial.TutorialMod;
 import com.besson.tutorial.block.ModBlocks;
+import com.besson.tutorial.entity.custom.ModBoat;
 import com.besson.tutorial.fluid.ModFluids;
-import com.besson.tutorial.item.custom.CustomArmorItem;
-import com.besson.tutorial.item.custom.ModFuelItem;
-import com.besson.tutorial.item.custom.PickaxeAxeItem;
-import com.besson.tutorial.item.custom.ProspectorItem;
+import com.besson.tutorial.item.custom.*;
 import com.besson.tutorial.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -86,6 +84,11 @@ public class ModItems {
     public static final DeferredItem<Item> ICE_ETHER_HANGING_SIGN = ITEMS.register("ice_ether_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ICE_ETHER_HANGING_SIGN.get(), ModBlocks.ICE_ETHER_WALL_HANGING_SIGN.get(), 
                     new Item.Properties().stacksTo(16)));
+    
+    public static final DeferredItem<Item> ICE_ETHER_BOAT = ITEMS.register("ice_ether_boat",
+            () -> new ModBoatItem(new Item.Properties(), ModBoat.Type.ICE_ETHER, false));
+    public static final DeferredItem<Item> ICE_ETHER_CHEST_BOAT = ITEMS.register("ice_ether_chest_boat",
+            () -> new ModBoatItem(new Item.Properties(), ModBoat.Type.ICE_ETHER, true));
     
 
     public static void register(IEventBus eventBus) {

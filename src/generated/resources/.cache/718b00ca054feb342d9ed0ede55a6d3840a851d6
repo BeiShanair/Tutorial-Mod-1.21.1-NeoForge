@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-17T21:41:38.7471841	Item Models: tutorial_mod
+// 1.21.1	2026-08-17T22:49:38.0501693	Item Models: tutorial_mod
 30f5da21ac3a5e5bd5779568e1cc423842be68bf assets/tutorial_mod/models/item/anthracite.json
 a1cbb06c69e9fff41f8fd629f3b74a4fe6ffe8a6 assets/tutorial_mod/models/item/anthracite2.json
 1dd1324a77ce7e330d07bb224aa7b75a84eecc2b assets/tutorial_mod/models/item/a_moment_apart_music_disc.json
@@ -10,9 +10,11 @@ f5e2a666e62a7adc564f07f0f5304db845c74de6 assets/tutorial_mod/models/item/fire_et
 61af38e6406190b8288a65c6c4c781aeca4c4bdf assets/tutorial_mod/models/item/fire_ether_shovel.json
 db3fe91ac43c45f4a3f32831101cb17cc5c3bb5a assets/tutorial_mod/models/item/fire_ether_sword.json
 eff098076f16ced3beb4b187d109fd0625c4919e assets/tutorial_mod/models/item/ice_ether.json
+55aa037d111b0e7cd5829587b48588db6de7ccdb assets/tutorial_mod/models/item/ice_ether_boat.json
 0c00224e287949a85975b61f48c96f0313f072f1 assets/tutorial_mod/models/item/ice_ether_boots.json
 bfc36e06ab35d0b5d085a88db42950cdeb3e71ee assets/tutorial_mod/models/item/ice_ether_button.json
 146cf93dc19f9fc2e854715fe0e1c00a12156604 assets/tutorial_mod/models/item/ice_ether_chestplate.json
+d9ad3971f19f7f0f6bca056fe3d2f7dd32036786 assets/tutorial_mod/models/item/ice_ether_chest_boat.json
 0fcf1172ad558242b439d49657c843f028b2d447 assets/tutorial_mod/models/item/ice_ether_door.json
 89531c939b9f72873c41e5103d7234af525f29a1 assets/tutorial_mod/models/item/ice_ether_fence.json
 711c328f0d52ecf37396996ac2e25fe6fd5fd255 assets/tutorial_mod/models/item/ice_ether_hanging_sign.json

@@ -105,5 +105,9 @@ public class ModEnUsLangProvider extends LanguageProvider {
         
         add(ModItems.ICE_ETHER_SIGN.get(), "Ice Ether Sign");
         add(ModItems.ICE_ETHER_HANGING_SIGN.get(), "Ice Ether Hanging Sign");
+        
+        add(ModItems.ICE_ETHER_CHEST_BOAT.get(), "Ice Ether Chest Boat");
+        add(ModItems.ICE_ETHER_BOAT.get(), "Ice Ether Boat");
+        
     }
 }

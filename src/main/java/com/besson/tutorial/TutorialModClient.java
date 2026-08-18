@@ -2,15 +2,21 @@ package com.besson.tutorial;
 
 import com.besson.tutorial.blockentity.ModBlockEntities;
 import com.besson.tutorial.entity.ModEntities;
+import com.besson.tutorial.entity.layer.ModModelLayers;
 import com.besson.tutorial.fluid.BaseFluidType;
 import com.besson.tutorial.fluid.ModFluidTypes;
 import com.besson.tutorial.fluid.ModFluids;
+import com.besson.tutorial.renderer.ModBoatRenderer;
 import com.besson.tutorial.renderer.SeatEntityRenderer;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.BoatModel;
+import net.minecraft.client.model.ChestBoatModel;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.entity.vehicle.Boat;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -58,5 +64,14 @@ public class TutorialModClient {
         
         event.registerBlockEntityRenderer(ModBlockEntities.MOD_SIGN.get(), SignRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.MOD_HANGING_SIGN.get(), HangingSignRenderer::new);
+
+        EntityRenderers.register(ModEntities.MOD_BOAT.get(), context -> new ModBoatRenderer(context, false));
+        EntityRenderers.register(ModEntities.MOD_CHEST_BOAT.get(), context -> new ModBoatRenderer(context, true));
+    }
+    
+    @SubscribeEvent
+    public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(ModModelLayers.ICE_ETHER_BOAT_LAYER, BoatModel::createBodyModel);
+        event.registerLayerDefinition(ModModelLayers.ICE_ETHER_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
     }
 }

@@ -60,6 +60,9 @@ public class ModItemModelsProvider extends ItemModelProvider {
         
         basicItem(ModItems.ICE_ETHER_SIGN.get());
         basicItem(ModItems.ICE_ETHER_HANGING_SIGN.get());
+        
+        basicItem(ModItems.ICE_ETHER_BOAT.get());
+        basicItem(ModItems.ICE_ETHER_CHEST_BOAT.get());
     }
     
     private <T extends Block> void blockItem(DeferredBlock<T> block) {
