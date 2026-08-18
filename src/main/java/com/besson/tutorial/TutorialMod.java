@@ -9,6 +9,8 @@ import com.besson.tutorial.item.ModCreativeModeTabs;
 import com.besson.tutorial.item.ModItems;
 import com.besson.tutorial.sound.ModSounds;
 import com.besson.tutorial.villager.ModVillagers;
+import com.besson.tutorial.worldgen.biome.ModSurfaceRules;
+import com.besson.tutorial.worldgen.biome.ModTerraBlenderAPI;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -27,6 +29,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(TutorialMod.MOD_ID)
@@ -55,6 +58,8 @@ public class TutorialMod {
 
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
+
+        ModTerraBlenderAPI.registerRegions();
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (TutorialMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
@@ -84,6 +89,8 @@ public class TutorialMod {
         });
 
         Sheets.addWoodType(ModBlocks.ICE_ETHER_WOOD_TYPE);
+
+        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
     }
 
     // Add the example block item to the building blocks tab
